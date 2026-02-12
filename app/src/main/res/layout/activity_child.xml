@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Activity Name Banner -->
+        <TextView
+            android:id="@+id/tvActivityName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Activity A"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Activity Info -->
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:fontFamily="monospace"
+            android:padding="12dp"
+            android:textSize="12sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Lifecycle Events Log -->
+        <TextView
+            android:id="@+id/tvLifecycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFF8E1"
+            android:fontFamily="monospace"
+            android:padding="12dp"
+            android:textSize="11sp"
+            android:layout_marginTop="8dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="12dp"
+            android:background="#BDBDBD" />
+
+        <!-- Navigation Buttons -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Navigate from here:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnStartA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Activity A (no flag)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnStartB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Activity B (no flag)"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnStartC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Activity C (no flag)"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#BDBDBD" />
+
+        <Button
+            android:id="@+id/btnClearTopToA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start A → CLEAR_TOP"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnClearTopSingleTopToA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start A → CLEAR_TOP + SINGLE_TOP"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnSingleTopSelf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start SELF → SINGLE_TOP"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnReorderA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start A → REORDER_TO_FRONT"
+            android:textAllCaps="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="8dp"
+            android:background="#BDBDBD" />
+
+        <Button
+            android:id="@+id/btnGoBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⬅ Finish (go back)"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+</ScrollView>
