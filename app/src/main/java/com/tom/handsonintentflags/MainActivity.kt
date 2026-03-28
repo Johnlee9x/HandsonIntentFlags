@@ -2,6 +2,7 @@ package com.tom.handsonintentflags
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -38,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             appendLine("instanceId  : ${System.identityHashCode(this@MainActivity)}")
             appendLine("isTaskRoot  : $isTaskRoot")
         }
+        Log.i("tamld", "updateInfo: ")
         findViewById<TextView>(R.id.tvInfo).text = info
     }
 
